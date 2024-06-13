@@ -3,7 +3,6 @@ package ec.edu.ups.ppw.demojakarta.modelo;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
 @Entity
 public class cliente {
@@ -39,6 +38,11 @@ public class cliente {
 	}
 	public void setCorreo(String correo) {
 		this.correo = correo;
+	}
+	@Override
+	public String toString() {
+		return "cliente [cedula=" + cedula + ", nombre=" + nombre + ", telefono=" + telefono + ", correo=" + correo
+				+ "]";
 	}
 	
 	
