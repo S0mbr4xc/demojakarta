@@ -1,5 +1,6 @@
 package ec.edu.ups.ppw.demojakarta.modelo;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -50,6 +51,11 @@ public class factura {
 	}
 	public void setDetalleFactura(List<detalleFactura> detalleFactura) {
 		this.detalleFactura = detalleFactura;
+	}
+	public void addDetalle(detalleFactura detalle) {
+		if(this.detalleFactura == null)
+			this.detalleFactura = new ArrayList<detalleFactura>();
+		detalleFactura.add(detalle);
 	}
 	@Override
 	public String toString() {

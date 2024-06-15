@@ -5,6 +5,7 @@ import java.util.List;
 
 import ec.edu.ups.ppw.demojakarta.dao.clienteDAO;
 import ec.edu.ups.ppw.demojakarta.dao.detallesDAO;
+import ec.edu.ups.ppw.demojakarta.dao.facturaDAO;
 import ec.edu.ups.ppw.demojakarta.dao.productoDAO;
 import ec.edu.ups.ppw.demojakarta.modelo.cliente;
 import ec.edu.ups.ppw.demojakarta.modelo.detalleFactura;
@@ -27,6 +28,9 @@ public class inicio {
 	
 	@Inject
 	private detallesDAO ddao;
+	
+	@Inject
+	private facturaDAO fdao;
 	
 	@PostConstruct
 	public void init() {
@@ -84,6 +88,14 @@ public class inicio {
 		
 		ddao.insert(det);
 		
+		factura fac = new factura();
+		
+		fac.setNumero(1);
+		fac.setCliente(cliente);
+		fac.setFecha(new Date());
+		fac.addDetalle(det);
+		
+		fdao.insert(fac);
 		
 		
 		List<cliente> listado = dao.getAll();
@@ -101,5 +113,9 @@ public class inicio {
 			System.out.println(cli.toString());
 		}
 		
+		List<factura> li = fdao.getAll();
+		for(factura cli : li) {
+			System.out.println(cli.toString());
+		}
 	}
 }
