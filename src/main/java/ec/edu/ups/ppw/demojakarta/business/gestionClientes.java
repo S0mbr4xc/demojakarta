@@ -23,7 +23,18 @@ public class gestionClientes {
 		return cli;	
 	}
 	
+	public void setCliente(cliente cliente) {
+		DAO.insert(cliente);
+	}
 	
+	public void actualiar(cliente cliente) {
+		DAO.update(cliente);
+	}
+	
+	public void borrar(String ci) {
+		cliente cli = DAO.read(ci);
+		DAO.delete(cli);
+	}
 	
 	public List<cliente> getAll(){
 		return DAO.getAll();
