@@ -1,0 +1,20 @@
+<h1> Listado de Clientes</h1>
+
+<h:dataTable value="#{clientes.listado}" var="cliente">
+	<h:column>
+		<f:facet name="header">Cedula</f:facet>
+		#{cliente.cedula}
+	</h:column>
+		<h:column>
+		<f:facet name="header">Nombre</f:facet>
+		#{cliente.nombre}
+	</h:column>
+		<h:column>
+		<f:facet name="header">Direccion</f:facet>
+		#{cliente.direccion}
+	
+			
+	</h:column>
+
+
+</h:dataTable>
