@@ -1,0 +1,16 @@
+ec\edu\ups\ppw\demojakarta\modelo\boleto.class
+ec\edu\ups\ppw\demojakarta\dao\detallesDAO.class
+ec\edu\ups\ppw\demojakarta\modelo\producto.class
+ec\edu\ups\ppw\demojakarta\business\gestionClientes.class
+ec\edu\ups\ppw\demojakarta\modelo\factura.class
+ec\edu\ups\ppw\demojakarta\services\clienteServices.class
+ec\edu\ups\ppw\demojakarta\dao\clienteDAO.class
+ec\edu\ups\ppw\demojakarta\business\inicio.class
+ec\edu\ups\ppw\demojakarta\services\CORSFilter.class
+ec\edu\ups\ppw\demojakarta\modelo\detalleFactura.class
+ec\edu\ups\ppw\demojakarta\views\vistaClientes.class
+ec\edu\ups\ppw\demojakarta\services\pathBase.class
+ec\edu\ups\ppw\demojakarta\modelo\cliente.class
+ec\edu\ups\ppw\demojakarta\dao\productoDAO.class
+ec\edu\ups\ppw\demojakarta\services\message.class
+ec\edu\ups\ppw\demojakarta\dao\facturaDAO.class
